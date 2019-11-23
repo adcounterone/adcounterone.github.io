@@ -93,7 +93,7 @@
 
 	<script>
 	function sendmail(){
-		$.get("http://divyavrat.com/mail/message.php?email=adcounterone@gmail.com&subject="+encodeURIComponent("Mail from "+$("#name").val())+"&msg="+encodeURIComponent($("#name").val()+' '+$("#mail").val()+' '+$("#Subject").val()+' '+$("#Message").val()+' ')+'',function(d,s){
+		$.get("https://team6app.herokuapp.com/mail/message.php?email=adcounterone@gmail.com&subject="+encodeURIComponent("Mail from "+$("#name").val())+"&msg="+encodeURIComponent($("#name").val()+' '+$("#mail").val()+' '+$("#Subject").val()+' '+$("#Message").val()+' ')+'',function(d,s){
 			$(".contact-from")[0].reset();
 			alert('Message Sent');
 		});
